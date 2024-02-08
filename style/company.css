@@ -1,0 +1,15 @@
+.parallax-window {
+    background-color: gainsboro;
+}
+
+.hero-inner .hero-cont-title {
+    width: 100%;
+    float: left;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    padding: 15px 0;
+}

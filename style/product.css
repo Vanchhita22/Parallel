@@ -1,0 +1,134 @@
+body{
+    font-family: "Fira Sans", sans-serif;
+    font-size: 16px;
+    padding: 0;
+}
+.main-content{
+    margin-top: 90px;
+}
+
+.hero-inner {
+    background-image: url(/Images/products-hero-1-1600x500.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 500px 0 0;
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: 0 0;
+}
+
+.article-list, .full-width, .heading-txt, .two-col-articles, .video-band {
+    background: #fff;
+}
+
+.hero-inner .hero-cont-title h1, .hero-inner .hero-cont-title h2, .hero-main .hero-cont-title h1, .hero-main .hero-cont-title h2 {
+    color: #2b2b2b;
+    padding: 0 0 15px;
+}
+
+.hero-inner .hero-cont-title {
+    width: 100%;
+    float: left;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    padding: 15px 0;
+}
+
+@media (max-width: 767px){
+.hero-inner {
+    padding: 330px 0 0;
+}
+}
+
+.heading-txt.band, .logo-band-cont, .members, .newsletter-form, .split-cont, .submenu-links, .two-col-articles, .video-band {
+    max-width: 1600px;
+    float: none;
+    margin: 20px;
+  
+    left: auto;
+    clear: both;
+ 
+}
+
+@media (max-width: 1199px){
+.heading-txt .container {
+    padding: 30px 0;
+}
+}
+.heading-txt h2{
+    padding: 10px ;
+  
+}
+
+.heading-txt aside{
+    text-align: center;
+}
+
+.heading-txt aside {
+    width: 80%;
+    max-width: 1000px;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+@media (max-width: 767px){
+.header-main .container, .heading-txt aside {
+    max-width: 100%;
+}
+}
+@media (max-width: 1199px){
+.heading-txt aside {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+}
+
+.heading-txt aside {
+    width: 100%;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+#para{
+    margin-top: 50px;
+}
+
+#para span{
+    color: orangered;
+    font-weight: 600;
+}
+
+.cta-info .icon-download {
+    vertical-align: middle;
+    font-size: 90px;
+    color: #3ab54a;
+    line-height: 1em;
+    position: relative;
+    z-index: 10;
+}
+
+
+
+.featured-casestudy aside {
+    width: 100%;
+    max-width: 585px;
+    float: none;
+    display: inline-block;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 60px 8% 60px 6%;
+}

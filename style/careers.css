@@ -1,0 +1,26 @@
+.post-main-title {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+   background-color: gainsboro;
+   padding: 40px 0;
+   margin-bottom: 50px;
+
+}
+
+@media (max-width: 576px) {
+  #myCarousel {
+    width: 90%;
+    margin: auto;
+  }
+
+  h3 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+  }
+}
+

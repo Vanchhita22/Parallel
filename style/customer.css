@@ -1,0 +1,218 @@
+.full-width {
+    overflow: hidden;
+}
+
+/* Default styles */
+.items-out {
+    display: flex;
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.item img {
+    margin: 5px;
+}
+
+/* Media query for small screens */
+@media only screen and (max-width: 600px) {
+    .items-out {
+        flex-wrap: wrap;
+    }
+    .item {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .item img {
+        margin: 5px;
+        width: 50%; /* Adjust the width of images for smaller screens */
+    }
+}
+
+/* Media query for medium screens */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .item img {
+        width: 33.33%; /* Adjust the width of images for medium screens */
+    }
+}
+
+/* Media query for large screens */
+@media only screen and (min-width: 901px) {
+    .item img {
+        width: 25%; /* Adjust the width of images for large screens */
+    }
+}
+
+
+/* Positioning for the overlay image */
+.image-container {
+    position: relative;
+}
+
+.overlay-img {
+    border: 10px solid white;
+    position: absolute;
+    top: 70%; /* Adjust as needed */
+    left: 30px; /* Adjust as needed */
+    transform: translate(-50%, 0%);
+    z-index: 1; /* Ensure it's above the background image */
+}
+
+/* Styles for the container */
+.full-width.two-col-articles {
+    width: 100%;
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styles for the article layout */
+.article-out {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Styles for the text content on the left */
+aside {
+    flex-grow: 1;
+    padding-right: 20px; /* Adjust spacing between text and image */
+}
+.Telefonica{
+    margin-top: 40px;
+    text-align: left;
+}
+
+
+/* Styles for the image container on the right */
+.article.image_on_right {
+    flex-shrink: 0;
+    width: 50%; /* Adjust the width of the image container */
+}
+
+/* Styles for the image */
+.background-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Styles for the overlay image */
+.overlay-img {
+    width: 70px; /* Adjust the width of the overlay image */
+    height: 50px; /* Adjust the height of the overlay image */
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+    .article-out {
+        flex-direction: column;
+    }
+    aside {
+        padding-right: 0; /* Remove padding between text and image */
+    }
+    .article.image_on_right {
+        width: 100%; /* Image takes full width on smaller screens */
+    }
+    .overlay-img {
+        width: 50px; /* Adjust the width of the overlay image for smaller screens */
+        height: 45px; /* Adjust the height of the overlay image for smaller screens */
+    }
+}
+
+
+/* CSS to display content side by side */
+.su-row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.box{
+    margin: 30px;
+    float: left;
+}
+.su-column {
+    width: 50%;
+    padding: 0 10px; /* Adjust as needed */
+}
+#Parallel h3{
+    margin-left: 40px;
+}
+
+#Parallel li{
+    text-align: left;
+}
+.su-row{
+    text-align: left;
+}
+.su-column-inner {
+ 
+    padding: 20px; /* Adjust as needed */
+    border-radius: 5px; /* Optional: Add border-radius for better styling */
+    margin-bottom: 20px; /* Adjust as needed */
+}
+.custom-ol {
+    list-style: none; /* Remove default numbering */
+    counter-reset: custom-counter; /* Reset the counter */
+}
+
+.custom-ol li {
+    counter-increment: custom-counter; /* Increment the counter for each list item */
+    margin-bottom: 10px; /* Add spacing between list items */
+}
+
+.custom-ol li::before {
+    content: counter(custom-counter) "."; /* Display the custom counter with a period */
+    color: orangered; /* Set the color of the counter */
+    font-weight: bold; /* Optional: Make the counter bold */
+    margin-right: 5px; /* Optional: Add space between the counter and the list item */
+}
+
+ol > li::before {
+    content: counter(item) "."; /* Display the default counter with a period */
+    color: #e44244; /* Set the color of the default counter */
+    padding-right: 5px; /* Optional: Add space between the counter and the content */
+}
+
+
+@media screen and (max-width: 768px) {
+    .su-column {
+        width: 100%; /* Display columns in full width on smaller screens */
+        padding: 0; /* Remove padding on smaller screens */
+    }
+
+    .box {
+      
+        margin: 15px; /* Adjust margins for smaller screens */
+        float: none; /* Remove float to allow for stacking */
+    }
+    
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Set the height of the container */
+  }
+  
+  /* Style for the video */
+  .video iframe {
+    max-width: 100%; /* Make the video responsive */
+    max-height: 100%; /* Make the video responsive */
+  }
+
+@media (max-width: 768px) {
+    .video-thumb iframe {
+      width: 100%; /* Set the width to 100% on smaller screens */
+      height: auto; /* Let the height adjust proportionally */
+    }
+
+    .video {
+        height: 50vh; /* Adjust height for smaller screens */
+      }
+  }
+  
